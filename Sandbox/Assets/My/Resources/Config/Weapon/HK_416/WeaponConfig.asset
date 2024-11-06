@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5c276badef47a048a7b738216b400f9, type: 3}
+  m_Name: WeaponConfig
+  m_EditorClassIdentifier: 
+  Name: HK_416
+  Damage: 15
+  DamageForce: 1
+  MagazineSize: 30
+  IsAutomatic: 1
+  ReloadTime: 1
+  FireTime: 0.15
+  ShowLayer:
+    serializedVersion: 2
+    m_Bits: 311
+  DamagebleLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  Distance: Infinity
+  ShotCount: 1
+  UseSpread: 0
+  SpreadFactor: 1
+  Snappiness: 15
+  ReturnSpeed: 10
+  Recoil: {x: 4, y: 2, z: 2}
+  LifeTime: 3
+  HitEffect: {fileID: 0}
+  OtherEffect: {fileID: 0}
+  AudioClip: {fileID: 0}

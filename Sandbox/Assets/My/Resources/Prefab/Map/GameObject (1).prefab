@@ -1,0 +1,513 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4972042696715869033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6222444770837694984}
+  m_Layer: 8
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6222444770837694984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4972042696715869033}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.16637902, y: 0.09475229, z: -0.6894394, w: 0.6985796}
+  m_LocalPosition: {x: -15.847336, y: 0, z: -67.96504}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7901203603928114592}
+  - {fileID: 8697594922053270936}
+  - {fileID: 323074962074767001}
+  - {fileID: 3111940515257519885}
+  - {fileID: 6444189153445322546}
+  - {fileID: 1464660511245319357}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: -5.843, y: 21.327, z: -90.347}
+--- !u!1001 &737999702983021708
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6222444770837694984}
+    m_Modifications:
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585786357046617437, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_Name
+      value: old wood boords thick big beem  (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585786357046617437, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e4354419af8150408ac45eee2c79c2e, type: 3}
+--- !u!4 &6444189153445322546 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+    type: 3}
+  m_PrefabInstance: {fileID: 737999702983021708}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3163687797682140710
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6222444770837694984}
+    m_Modifications:
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585786357046617437, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_Name
+      value: old wood boords thick big beem  (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585786357046617437, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e4354419af8150408ac45eee2c79c2e, type: 3}
+--- !u!4 &8697594922053270936 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+    type: 3}
+  m_PrefabInstance: {fileID: 3163687797682140710}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4536545278056394270
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6222444770837694984}
+    m_Modifications:
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585786357046617437, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_Name
+      value: old wood boords thick big beem  (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585786357046617437, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e4354419af8150408ac45eee2c79c2e, type: 3}
+--- !u!4 &7901203603928114592 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+    type: 3}
+  m_PrefabInstance: {fileID: 4536545278056394270}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5116152725590816515
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6222444770837694984}
+    m_Modifications:
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585786357046617437, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_Name
+      value: old wood boords thick big beem  (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585786357046617437, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e4354419af8150408ac45eee2c79c2e, type: 3}
+--- !u!4 &1464660511245319357 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5116152725590816515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6280401359475246375
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6222444770837694984}
+    m_Modifications:
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585786357046617437, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_Name
+      value: old wood boords thick big beem  (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585786357046617437, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e4354419af8150408ac45eee2c79c2e, type: 3}
+--- !u!4 &323074962074767001 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+    type: 3}
+  m_PrefabInstance: {fileID: 6280401359475246375}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8681928928664683699
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6222444770837694984}
+    m_Modifications:
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585786357046617437, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_Name
+      value: old wood boords thick big beem  (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585786357046617437, guid: 0e4354419af8150408ac45eee2c79c2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e4354419af8150408ac45eee2c79c2e, type: 3}
+--- !u!4 &3111940515257519885 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6004350766501661630, guid: 0e4354419af8150408ac45eee2c79c2e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8681928928664683699}
+  m_PrefabAsset: {fileID: 0}
