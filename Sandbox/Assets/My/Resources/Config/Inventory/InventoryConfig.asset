@@ -18,3 +18,6 @@ MonoBehaviour:
   - Count: 15
     Item: {fileID: 2149148021283507151, guid: bf732a5de989b3f4782d8a1d4a58e794, type: 3}
   Nexbot: []
+  Trowable:
+  - Count: 5
+    Item: {fileID: 8280899672213278609, guid: a4be2ff472befac488e26f0685dbe178, type: 3}

@@ -7,8 +7,8 @@ namespace Project
     public class ThrowableConfig : ScriptableObject
     {
         public float ThrowCooldown;
-        public float throwUpForce;
-        public float throwForce;
+        public float ThrowUpForce;
+        public float ThrowForce;
 
         public GameObject Item;
     }
