@@ -1,12 +1,16 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
-using static Project.PlayerInput;
+using static Project.InputPlayer;
 
 namespace Project
 {
     public class PlayerController : MonoBehaviour
     {
+        public static Action OnIdleMove;
+        public static Action OnRunningMove;
+
         [SerializeField] private Transform _camera;
 
         private float _rotationX;
@@ -45,10 +49,15 @@ namespace Project
 
         private void Move()
          {
-            _direction = transform.forward * Instance.Direction.y + transform.right * Instance.Direction.x;
+            _direction = transform.forward * Instance.MoveDirection.y + transform.right * Instance.MoveDirection.x;
 
             if ((Physics.IsGround || !Physics.CheckIsFlying()))
             {
+                if((Instance.MoveDirection.x != 0 || Instance.MoveDirection.y != 0) && Physics.IsGround)
+                {
+                    var isRunning = Instance.IsAcceleration ? OnRunningMove : OnIdleMove;
+                    isRunning?.Invoke();
+                }
 
                 _speed = Instance.IsAcceleration ? _config.Acceleration : _config.Speed;
                 _controller.Move(_direction * _speed * Time.deltaTime);
@@ -78,7 +87,7 @@ namespace Project
         {
             while (!Physics.IsGround && Physics.CheckIsFlying())
             {
-                var direction = transform.forward + transform.right * Instance.Direction.x;
+                var direction = transform.forward + transform.right * Instance.MoveDirection.x;
 
                 _speed -= (_config.MaxInertia - Physics.Inertia) * Time.deltaTime;
                 _speed = Mathf.Clamp(_speed, _config.MinSpeed, _config.Acceleration);
@@ -109,6 +118,6 @@ namespace Project
             Gizmos.color = Color.green;
             Gizmos.DrawSphere(Physics.IsGroundPoint.position, _config.Radius);
         }
-    }
 #endif
+    }
 }

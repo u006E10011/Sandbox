@@ -9,6 +9,7 @@ namespace N19
         [SerializeField] private Button _button;
 
         private void Reset() => _button = _button != null ? _button : GetComponent<Button>();
+
         private void OnEnable() => _button.onClick.AddListener(Load);
         private void OnDisable() => _button.onClick.RemoveListener(Load);
 

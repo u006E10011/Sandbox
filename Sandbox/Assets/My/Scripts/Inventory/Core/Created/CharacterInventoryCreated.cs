@@ -2,13 +2,24 @@
 
 namespace Project
 {
-    public class CharacterInventoryCreated : ItemInventoryCreated, IItemInventoryCreated
+    public class CharacterInventoryCreated : ItemInventoryCreated, IItemInventoryCreatedRaycast
     {
-        public IItemInventory Get (Vector3 position)
+        [SerializeField] private Transform _rotateDirection;
+
+        public override void Init()
+        {
+            base.Init();
+
+            foreach (var item in ObjectPool.Pool)
+                item.transform.parent = Parent;
+        }
+
+        public IItemInventory Get(Vector3 position)
         {
             var item = ObjectPool.Get();
             item.transform.position = position;
-            item.transform.LookAt(InstantiateitemPoint);
+            item.transform.parent = Parent;
+            item.transform.LookAt(_rotateDirection);
             item.transform.rotation = Quaternion.Euler(0, item.transform.eulerAngles.y, 0);
 
             return this;

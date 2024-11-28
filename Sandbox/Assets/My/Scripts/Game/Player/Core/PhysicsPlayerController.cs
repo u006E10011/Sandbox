@@ -30,7 +30,7 @@ namespace Project
 
         public void MathInertia()
         {
-            if (IsGround && (PlayerInput.Instance.Direction.x != 0 || PlayerInput.Instance.Direction.y != 0))
+            if (IsGround && (InputPlayer.Instance.MoveDirection.x != 0 || InputPlayer.Instance.MoveDirection.y != 0))
                 Inertia += _config.InertiaMultiplier * Time.deltaTime;
             else
                 Inertia -= _config.InertiaPeduction * Time.deltaTime;
@@ -45,7 +45,6 @@ namespace Project
 
         private void CheckGround()
         {
-            //IsGround = Physics.CheckCapsule(IsGroundPoint.position, Vector3.down * _config.JumpHeight / 2, _config.Radius, _config.Ground);
             IsGround = Physics.CheckSphere(IsGroundPoint.position, _config.Radius, _config.Ground);
         }
     }

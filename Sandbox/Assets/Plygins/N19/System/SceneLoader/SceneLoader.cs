@@ -14,38 +14,53 @@ namespace N19
 
     public static class SceneLoader
     {
-        public static CancellationTokenSource Cts = new();
-        public static CancellationToken Token = Cts.Token;
+        private static CancellationTokenSource Cts = new();
+        private static CancellationToken Token = Cts.Token;
 
+        #region Async
+        /// <summary>
+        /// Асихронная загрузка сцены из перечисления (N19.Scene)
+        /// </summary>
+        /// <returns></returns>
         public static async UniTask LoadAsync(Scene scene, float delay = 0)
         {
             Reload();
 
-            Cts = new();
-            Token = Cts.Token;
-
             try
             {
                 await UniTask.Delay(TimeSpan.FromSeconds(delay), cancellationToken: Token);
-
-                LoadScene((int)scene);
+                await LoadSceneAsync((int)scene);
             }
             catch (OperationCanceledException) { }
         }
 
+        /// <summary>
+        /// Асихронная загрузка сцены по индексу
+        /// </summary>
+        /// <returns></returns>
         public static async UniTask LoadAsync(int index, float delay = 0)
         {
             Reload();
 
             try
             {
-                await UniTask.Delay(TimeSpan.FromSeconds(delay), cancellationToken: Token);
-                LoadScene(index);
+                if (index <= sceneCountInBuildSettings)
+                {
+                    await UniTask.Delay(TimeSpan.FromSeconds(delay), cancellationToken: Token);
+                    await LoadSceneAsync(index);
+                }
+                else
+                    UnityEngine.Debug.LogError($"Запрашиваемый индекс: {index} не существует, максимальный индекс: {sceneCountInBuildSettings}");
             }
             catch (OperationCanceledException) { }
         }
 
-        public static async UniTask LoadNextSceneAsync(float delay = 0)
+        /// <summary>
+        /// Асихронная загрузка следующей сцены
+        /// </summary>
+        /// <param name="delay"></param>
+        /// <returns></returns>
+        public static async UniTask LoadNextSceneAsync(float delay = 0, bool isLoadMainMenuToException = true)
         {
             Reload();
 
@@ -56,17 +71,31 @@ namespace N19
                 if (next < sceneCountInBuildSettings)
                 {
                     await UniTask.Delay(TimeSpan.FromSeconds(delay), cancellationToken: Token);
-
-                    LoadScene(next);
+                    await LoadSceneAsync(next);
                 }
                 else
-                    await LoadAsync(Scene.MainMenu);
+                {
+                    if (isLoadMainMenuToException)
+                        await LoadAsync(Scene.MainMenu);
+                    else
+                        UnityEngine.Debug.LogError($"Запрашиваемый индекс: {GetActiveScene().buildIndex + 1} не существует, максимальный индекс: {sceneCountInBuildSettings}");
+                }
             }
             catch (OperationCanceledException) { }
 
         }
 
-        public static void LoadSceneToIndex(int index) => LoadScene(index);
+        /// <summary>
+        /// Асихронно загружает активную сцену
+        /// </summary>
+        /// <returns></returns>
+        public static async UniTask LoadActiveSceneAsync() => await LoadSceneAsync(GetActiveScene().buildIndex);
+        #endregion
+
+        #region Default
+        public static void LoadScene(int index) => LoadScene(index);
+        public static void LoadActiveScene() => LoadScene(GetActiveScene().buildIndex);
+        #endregion
 
         private static void Reload()
         {

@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33e09d2522dca24792bab07714ab475, type: 3}
   m_Name: InventoryConfig
   m_EditorClassIdentifier: 
+  IndexRaycastItemCreatePistol: 2
   NPS:
   - Count: 15
-    Item: {fileID: 3740262000228048785, guid: 57d20a26cd6e26645b40c986e36fe495, type: 3}
+    Item: {fileID: 9167373028233470241, guid: 1810d233437730f4f851464faf816993, type: 3}
   - Count: 15
-    Item: {fileID: 2149148021283507151, guid: bf732a5de989b3f4782d8a1d4a58e794, type: 3}
+    Item: {fileID: 1191020203560439891, guid: 24d9c767698b52d4e9467f3660673520, type: 3}
   Nexbot: []
   Trowable:
   - Count: 5

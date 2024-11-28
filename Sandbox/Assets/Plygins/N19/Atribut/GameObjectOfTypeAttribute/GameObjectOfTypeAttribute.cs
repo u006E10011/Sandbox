@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿#if UNITY_EDITOR
+
+using UnityEngine;
 using System;
 
 namespace N19
@@ -15,3 +17,4 @@ namespace N19
         }
     }
 }
+#endif

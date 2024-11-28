@@ -9,23 +9,18 @@ namespace Project
         [SerializeField] private int _index;
 
         [SerializeField] private InventoryItemType _type;
-        [SerializeField] private Transform _parent;
 
-        protected Transform InstantiateitemPoint;
+        [SerializeField] protected Transform Parent;
+
         protected InventoryConfig Config;
-        protected GameObjectPool ObjectPool;
+        public GameObjectPool ObjectPool { get; private set; }
 
-        private void Reset() => _parent = gameObject.transform;
+        private void Reset() => Parent = gameObject.transform;
 
-        public virtual void Init(Transform instantiateItemPoint)
+        public virtual void Init()
         {
             Config = LoaderConfig.InventoryConfig;
-            InstantiateitemPoint = instantiateItemPoint;
-
             ObjectPool = new(Type()[_index].Item, Type()[_index].Count);
-
-            foreach (var item in ObjectPool.Pool)
-                item.transform.parent = _parent;
         }
 
         public abstract void Return();

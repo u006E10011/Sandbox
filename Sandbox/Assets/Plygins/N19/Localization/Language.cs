@@ -15,13 +15,13 @@
 
         public static void Check()
         {
-           /* Value = YG.YandexGame.EnvironmentData.language switch
+           Value = YG.YandexGame.EnvironmentData.language switch
             {
                 "ru" => LanguageType.RU,
                 "en" => LanguageType.EN,
                 "tr" => LanguageType.TR,
                 _ => LanguageType.EN
-            };*/
+            };
         }
 
         public static void Select(LanguageType type)

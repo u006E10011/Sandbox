@@ -13,6 +13,8 @@ namespace Project
     [CreateAssetMenu(fileName = "InventoryConfig", menuName = "Config/Inventory/InventoryConfig")]
     public class InventoryConfig : ScriptableObject
     {
+        public int IndexRaycastItemCreatePistol= 2;
+
         public List<InventoryItem> NPS;
         public List<InventoryItem> Nexbot;
         public List<InventoryItem> Trowable;

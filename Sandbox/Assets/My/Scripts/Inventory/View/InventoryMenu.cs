@@ -17,7 +17,7 @@ namespace Project
 
         private void Start()
         {
-            PlayerInput.OnF += MenuState;
+            IInputPlayer.OnInventory += MenuState;
             EventBus.Instance.OnInventoryIsOpen += ActiveSelf;
 
             for (int i = 0; i < _inventory.Weapon.Count; i++)
@@ -34,7 +34,7 @@ namespace Project
 
         private void OnDisable()
         {
-            PlayerInput.OnF -= MenuState;
+            IInputPlayer.OnInventory -= MenuState;
             EventBus.Instance.OnInventoryIsOpen -= ActiveSelf;
         }
 

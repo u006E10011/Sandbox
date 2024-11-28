@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5c276badef47a048a7b738216b400f9, type: 3}
+  m_Name: HK_416
+  m_EditorClassIdentifier: 
+  Name: HK_416
+  Damage: 78
+  DamageForce: 1
+  MagazineSize: 30
+  IsAutomatic: 1
+  ReloadTime: 1
+  FireTime: 0.15
+  ShowLayer:
+    serializedVersion: 2
+    m_Bits: 1409
+  DamagebleLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  Distance: Infinity
+  ShotCount: 1
+  UseSpread: 0
+  SpreadFactor: 1
+  LifeTime: 0.5
+  Preload: 5
+  HitEffect: {fileID: 6754837757618303558, guid: c46af489ed80c974a9ddbd8056141f24,
+    type: 3}
+  OtherEffect: {fileID: 7946020707940653963, guid: bb19f297ef6a50a41ae4ff0428f607f8,
+    type: 3}
+  ShotSound: {fileID: 8300000, guid: 35c5ec41b50c85945967380e8d9f2c21, type: 3}
+  ReloadSound: {fileID: 8300000, guid: 75655f9e6bdeae14da3243dfa5e51019, type: 3}

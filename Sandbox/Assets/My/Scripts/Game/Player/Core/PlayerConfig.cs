@@ -2,7 +2,7 @@
 
 namespace Project
 {
-    [CreateAssetMenu(fileName = nameof(PlayerConfig), menuName = "Config/PlayerConfig")]
+    [CreateAssetMenu(fileName = nameof(PlayerConfig), menuName = "Config/Character/PlayerConfig")]
     public class PlayerConfig : ScriptableObject
     {
         [Header("Stats")]

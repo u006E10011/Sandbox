@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 namespace Project
@@ -7,39 +6,42 @@ namespace Project
     public class Inventory : MonoBehaviour, ISwitchItemInventory
     {
         public List<IItemInventoryActivated> Weapon { get; private set; } = new();
-        public List<IItemInventoryCreated> NPS { get; private set; } = new();
-        public List<IItemInventoryCreated> Nexbot { get; private set; } = new();
+        public List<IItemInventoryCreatedRaycast> NPS { get; private set; } = new();
+        public List<IItemInventoryCreatedRaycast> Nexbot { get; private set; } = new();
 
         private IItemInventoryActivated _weapon;
-        private IItemInventoryCreated _character;
+        private IItemInventoryCreatedRaycast _raycastCrate;
 
         public void Init(Transform containerItemInventoryWeapon, Transform containerItemInventoryNPS, Transform containerItemInventoryNexbot)
         {
             Weapon = new(containerItemInventoryWeapon.GetComponentsInChildren<IItemInventoryActivated>(true));
-            NPS = new(containerItemInventoryNPS.GetComponentsInChildren<IItemInventoryCreated>(true));
-            Nexbot = new(containerItemInventoryNexbot.GetComponentsInChildren<IItemInventoryCreated>(true));
+            NPS = new(containerItemInventoryNPS.GetComponentsInChildren<IItemInventoryCreatedRaycast>(true));
+            Nexbot = new(containerItemInventoryNexbot.GetComponentsInChildren<IItemInventoryCreatedRaycast>(true));
 
             _weapon = Weapon?[0];
-            _character = NPS?[0];
+            _raycastCrate = NPS?[0];
         }
 
 
         public void Switch(InventoryItemType type, int index)
         {
+            _weapon?.Return();
+
             switch (type)
             {
                 case InventoryItemType.Weapon:
-                    _weapon?.Return();
                     _weapon = (IItemInventoryActivated)Weapon[index].Get();
                     break;
                 case InventoryItemType.NPS:
-                    _character = NPS[index];
+                    _raycastCrate = NPS[index];
+                    _weapon = (IItemInventoryActivated)Weapon[LoaderConfig.InventoryConfig.IndexRaycastItemCreatePistol].Get();
                     break;
                 case InventoryItemType.Necbox:
-                    _character = Nexbot[index];
+                    _raycastCrate = Nexbot[index];
+                    _weapon = (IItemInventoryActivated)Weapon[LoaderConfig.InventoryConfig.IndexRaycastItemCreatePistol].Get();
                     break;
             }
         }
-        public IItemInventory GetItem() => _character;
+        public IItemInventory GetItem() => _raycastCrate;
     }
 }
